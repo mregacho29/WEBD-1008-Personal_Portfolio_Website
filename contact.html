@@ -1,0 +1,118 @@
+<!--------w------------
+
+	Do not alter this comment block. 
+	Only fill out the information below. 
+	
+    Project 04
+    Name: Ma Crizza Lynne Regacho
+    Date: 2024-04-19
+    Description: This is an contact html file for Project 4. The purpose of this file is to create a contact form for the user to fill out.
+    This file contains the contact form for the user to fill out.
+	
+---------------------->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Start of the Documentation section! -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+		<script src="js/formValidate.js"></script>
+		<title>Home Page - Ma Crizza Lynne Regacho</title>
+	</head>
+
+    <body>
+        <!-- Nav -->
+		<nav id="nav">
+			<ul class="container">
+				<li><a href="index.html">Home Page</a></li>
+				<li><a href="index.html#work">Work</a></li>
+				<li><a href="portfoliopage.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+
+        <main>
+            <!-- Home -->
+            <article id="contact-section" class="wrapper style1">
+                <div class="content-wrapper">
+                    <header id="contact-header">
+                        <h1>Contact Page</h1>
+                    </header>
+                </div>
+            
+                <div class="form-container">
+                    <form id="myForm" onsubmit="return validate(event);" action="index.html">
+                        <div class= "input-row">
+                            <div class="input-container">
+                                <label for="name">Name:</label>
+                                <input id="name" name="name" type="text" autocomplete="on" placeholder="Name">
+                                <p class="name error" id="name_error">* Required field</p>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="name">Phone #:</label>
+                                <input id="phone" name="phone" type="text" autocomplete="on" placeholder="Email">
+                                <p class="phone error" id="phone_error">* Required field</p>
+                                <p class="phone error" id="phoneformat_error">
+                                    * Invalid phone number
+                                </p>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="name">Email:</label>
+                                <input id="email" name="email" type="text" autocomplete="on" placeholder="Email">
+                                <p class="email error" id="email_error">* Required field</p>
+                                <p class="email error" id="emailformat_error">
+                                    * Invalid email address
+                                </p>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="name">Subject:</label>
+                                <input id="subject" name="subject" type="text" autocomplete="off" placeholder="Subject">
+                                <p class="subject error" id="subject_error">* Required field</p>
+                            </div>
+
+                            <div class="input-container">
+                                <label for="name">Message:</label>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                <p class="message error" id="message_error">* Required field</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <ul class="actions">
+
+                                <li><button type="submit" id="submit">Send Message</button></li>
+                                <li><button type="reset" id="clear">Clear Form</button></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <!-- Social Media -->
+            <article class="wrapper style3">
+                <div>
+                    <hr>
+                    <h2>Find me on ...</h2>
+                    <ul class="social">
+                        <li><a href="https://twitter.com/CrizzaLynne" class="twitter"><img src="images/twitter.svg" alt="Twitter"></a></li>
+                        <li><a href="https://www.facebook.com/crizzadang" class="facebook"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/crizzadang" class="instagram"><img src="images/instagram.svg" alt="Instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/in/crizzaregacho" class="linkedin"><img src="images/linkedin.svg" alt="LinkedIn"></a></li>
+                        <li><a href="https://www.tumblr.com/blog/crizzalynnetheoneandonly-blog" class="tumblr"><img src="images/tumblr.svg" alt="Tumblr"></a></li>
+                        <li><a href="https://github.com/mregacho29" class="github"><img src="images/github.svg" alt="Github"></a></li>
+                    </ul>
+                </div>
+                <footer>
+                    <ul id="copyright">
+                        <li>&copy; Ma Crizza Lynne Regacho. All rights reserved.</li><li>Web Development Project 4</li>
+                    </ul>
+                </footer>
+                <hr>
+            </article>
+        </main>
+    </body>
+</html>
